@@ -1,6 +1,7 @@
 ---
-title: Commands
-title_zh: 命令行
+title:
+  en: Commands
+  zh-CN: 命令行
 categories:
   - guide
 top: 99
@@ -115,15 +116,19 @@ pnpm add -g valaxy
 
 :::
 
-## 文章 {lang="zh-CN"}
+### 文章 {lang="zh-CN"}
 
-## Posts {lang="en"}
+### Posts {lang="en"}
 
 ::: zh-CN
 
 - `valaxy new <title>`: 在 `pages/posts` 目录下新建标题为 `title` 的帖子（.md）
+  - `-f` 以文件夹的形式创建。
 
-譬如，`valaxy new your-first-post`，将会在 `pages/posts` 下自动新建 `your-first-post.md` 文件，并附带日期。
+譬如：
+
+- `valaxy new your-first-post`，将会在 `pages/posts` 下自动新建 `your-first-post.md` 文件，并附带日期。
+- `valaxy new -f your-first-post`，将会在 `pages/posts` 下自动新建 `your-first-post/index.md` 文件。
 
 > 你觉得还可以有其他更常用、更好用的命令？没问题，尽管来 [Issues](https://github.com/YunYouJun/valaxy/issues) 反馈吧！
 :::
